@@ -26,8 +26,9 @@ struct ContentView: View {
             SliderColorView(tintColor: .red, value: $redValue)
                 .focused($amountIsFocused)
             SliderColorView(tintColor: .green, value: $greenValue)
+                .focused($amountIsFocused)
             SliderColorView(tintColor: .blue, value: $blueValue)
-            
+                .focused($amountIsFocused)
             
             Spacer()
             
