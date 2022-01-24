@@ -30,9 +30,7 @@ struct ContentView: View {
             
             
             Spacer()
-            Button("Done") {
-                hideKeyboard()
-            }
+            
         }
         .padding()
         .toolbar {
@@ -53,11 +51,5 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-extension ContentView {
-    func hideKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-    
-    
-}
+
 
