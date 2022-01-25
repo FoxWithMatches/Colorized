@@ -11,7 +11,7 @@ struct SliderColorView: View {
     
     @Binding var value: Double
     @State private var textField = ""
-   
+    
     let tintColor: Color
     
     var body: some View {
@@ -26,7 +26,6 @@ struct SliderColorView: View {
                 }
             
             SliderTextField(textField: $textField, value: $value)
-            
         }
         .onAppear {
             textField = "\(lround(value))"

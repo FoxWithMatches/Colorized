@@ -28,7 +28,6 @@ struct ContentView: View {
                 .focused($amountIsFocused)
             
             Spacer()
-            
         }
         .padding()
         .toolbar {
