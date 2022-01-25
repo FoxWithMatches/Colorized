@@ -16,9 +16,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            RectangleView(redValue: $redValue,
-                          greenValue: $greenValue,
-                          blueValue: $blueValue)
+            RectangleView(redValue: redValue,
+                          greenValue: greenValue,
+                          blueValue: blueValue)
             
             SliderColorView(tintColor: .red, value: $redValue)
                 .focused($amountIsFocused)

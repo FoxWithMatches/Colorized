@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct RectangleView: View {
-    @Binding var redValue: Double
-    @Binding var greenValue: Double
-    @Binding var blueValue: Double
+    let redValue: Double
+    let greenValue: Double
+    let blueValue: Double
     
     var body: some View {
         Rectangle()
@@ -22,6 +22,6 @@ struct RectangleView: View {
 
 struct RectangleView_Previews: PreviewProvider {
     static var previews: some View {
-        RectangleView(redValue: .constant(0), greenValue: .constant(0), blueValue: .constant(0))
+        RectangleView(redValue: 0, greenValue: 0, blueValue: 0)
     }
 }
