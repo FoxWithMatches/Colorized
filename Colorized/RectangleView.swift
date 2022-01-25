@@ -16,7 +16,9 @@ struct RectangleView: View {
         Rectangle()
             .frame(width: 320, height: 150)
             .cornerRadius(10)
-            .foregroundColor(Color(red: redValue, green: greenValue, blue: blueValue))
+            .foregroundColor(Color(red: redValue / 255,
+                                   green: greenValue / 255,
+                                   blue: blueValue / 255))
     }
 }
 

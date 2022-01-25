@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @FocusState private var amountIsFocused: Bool
     
-    @State private var redValue = 0.7
-    @State private var greenValue = 0.5
-    @State private var blueValue = 0.7
+    @State private var redValue = Double.random(in: 0...255)
+    @State private var greenValue = Double.random(in: 0...255)
+    @State private var blueValue = Double.random(in: 0...255)
     
     var body: some View {
         VStack {
@@ -20,11 +20,11 @@ struct ContentView: View {
                           greenValue: greenValue,
                           blueValue: blueValue)
             
-            SliderColorView(tintColor: .red, value: $redValue)
+            SliderColorView(value: $redValue, tintColor: .red)
                 .focused($amountIsFocused)
-            SliderColorView(tintColor: .green, value: $greenValue)
+            SliderColorView(value: $greenValue, tintColor: .green)
                 .focused($amountIsFocused)
-            SliderColorView(tintColor: .blue, value: $blueValue)
+            SliderColorView(value: $blueValue, tintColor: .blue)
                 .focused($amountIsFocused)
             
             Spacer()
