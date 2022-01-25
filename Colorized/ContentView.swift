@@ -9,13 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @FocusState private var amountIsFocused: Bool
+    
     @State private var redValue = 0.7
     @State private var greenValue = 0.5
     @State private var blueValue = 0.7
-    @State private var textField = ""
-    @State private var redDisplayedText = 0.7
-    @State private var greenDisplayedText = 0.5
-    @State private var blueDisplayedText = 0.7
     
     var body: some View {
         VStack {
